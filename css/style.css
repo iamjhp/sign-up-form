@@ -1,0 +1,181 @@
+:root {
+    --header: 6rem;
+    --footer: 4rem;
+    --gey-color: rgb(202, 197, 197);
+    --bg-green-color: rgb(0, 173, 181);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F7;
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* header */
+header {
+    height: var(--header);
+    background-color: var(--bg-green-color);
+    box-shadow: 0 3px 5px 0 rgba(141, 139, 139, 0.3);
+    
+}
+
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationbar-toggle {
+    font-weight: bold;
+}
+
+.navigationbar-navigation {
+    display: flex;
+    gap: 32px;
+}
+
+.navigationbar-navigation a:hover {
+    color: blueviolet;
+}
+
+.logo {
+    height: 6rem;
+}
+
+/* mid container */
+.application-content {
+    flex: 1;
+    display: flex;
+}
+
+.box-width {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 64px;
+}
+
+.container {
+    margin-left: 32vh;
+    margin-right: 25vh;
+}
+
+.picture {
+    background-image: url(../img/sign-up.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.info-box {
+    width: 80vh;
+}
+
+.formular-box {
+    background-color: white;
+    border-radius: 16px;
+    width: 500px;
+}
+
+.nativagtion-item {
+    text-align: center;
+}
+
+.nativagtion-item ul {
+    columns: 2;
+}
+
+.tabs-navigation {
+    
+    
+}
+
+.talent-tab {
+    background-color: white;
+    border-radius: 16px 0 0 0; 
+}
+
+.right-tab {
+    border-radius: 0 16px 0 0;
+    background-color: grey;
+}
+
+.talent-text-box {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+button {
+    background-color: var(--gey-color);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: var(--bg-green-color);
+    color: black;
+    
+}
+
+.left{
+    padding: 10px 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+}
+
+input:focus {
+    border: 2px solid var(--gey-color);
+    background-color: var(--gey-color);
+}
+
+.log-in p{
+    display :inline;
+    gap: 5px;
+}
+
+/* footer */
+
+footer {
+    height: var(--footer);
+}
+
+a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}

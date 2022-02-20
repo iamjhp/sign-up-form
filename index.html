@@ -8,6 +8,76 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header-container">
+        <div class="container navigationbar">
+            <div class="navigationbar-logo">
+                <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="navigationbar-toggle">
+                <ul class="navigationbar-navigation">
+                    <li class="navigationbar_item"><a href="#">Hire Talent</a></li>
+                    <li class="navigationbar_item"><a href="#">Find a Job</a></li>
+                    <li class="navigationbar_item"><a href="#">Login</a></li>
+                    <li class="navigationbar_item"><a href="#">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="application-content">
+        <div class="container box-width">
+            <div class="layout info-box picture">
+            </div>
+            <div class="layout formular-box">
+                <div class="nativagtion-item">
+                    <ul class="tabs-navigation">
+                        <li class="left-tab">
+                            <a href="#" class="talent-tab">TALENT</a>
+                        </li>
+                        <li class="right-tab">
+                            <a href="#" class="employer-tab">EMPLOYER</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="talent-text-box">
+                    <p>We Bring Job Offers to You</p>
+                </div>
+                <form action="#">
+                    <div class="input">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="phone-number">Phone number</label>
+                        <input type="text" name="phone-number" id="phone-number" minlength="10" maxlength="10">
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="passwor" id="passwor" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <div class="left button"><button type="submit">Create Account</button></div>
+                </form>
+                <div class="log-in left"><p>Already have an account? </p><a href="#">Log in</a></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-container">
+    </footer>
 </body>
 </html>
